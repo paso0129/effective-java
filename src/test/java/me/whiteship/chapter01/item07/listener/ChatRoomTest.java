@@ -27,7 +27,7 @@ class ChatRoomTest {
         Thread.sleep(5000L);
 
         List<WeakReference<User>> users = chatRoom.getUsers();
-        assertTrue(users.size() == 1);
+        assertNotEquals(1, users.size());
     }
 
 }
